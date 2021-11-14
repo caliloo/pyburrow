@@ -1,0 +1,19 @@
+general:
+  #list here reg expressions to blacklist certain consumer groups from the action
+  exclude:
+    # - console-consumer-*
+    # - pkcat-*
+  #give here the bootstrap server string, they way you'd do on the kafka-console-consumer.sh
+  #command line
+  bootstrap-server: localhost:9092
+  #ssh login@host pair for the remote host where to play requests
+  #you need to setup ssh password-less login yourself
+  remote-ssh: charles@localhost
+  #path of kafka on the remote
+  kafka-bin-path: /home/work/kafka/kafka_2.12-2.2.0/bin
+  influxdb:
+    server: "http://localhost:8086"
+    token: "FhK9iC6xcS0rpPRdP7-36Si2Hl_U63BgX6gv53F-3pYgzDN1WvqPkGRO9UwyOywvS8Cw4E0y9yrNTZl-lRycQQ=="
+    org: "my family"
+    bucket: "somebucket"
+
