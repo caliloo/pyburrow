@@ -3,7 +3,7 @@ general:
   exclude:
     # - console-consumer-*
     # - pkcat-*
-  #give here the bootstrap server string, they way you'd do on the kafka-console-consumer.sh
+  #give here the bootstrap server string, the way you'd do on the kafka-console-consumer.sh
   #command line
   bootstrap-server: localhost:9092
   #ssh login@host pair for the remote host where to play requests
